@@ -38,9 +38,6 @@ export default {
 <style>
 
 nav{
-    /* height: 120px; */
-    /* test */
-
     background-color: white;
 }
 

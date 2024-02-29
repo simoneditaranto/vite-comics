@@ -11,7 +11,7 @@ export default {
     <main>
 
         <div class="content">
-            --> Content goes here <--
+            ==> Content goes here 
         </div>
 
     </main>

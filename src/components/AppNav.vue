@@ -1,8 +1,21 @@
 <script>
 
 export default {
-    name: 'AppNav'
+
+    name: 'AppNav',
+
+    data() {
+        return {
+            
+            navLinks: [
+                'characters', 'comics', 'movies', 'tv', 'games', 'collectibles', 'videos', 'fans', 'news', 'shop'
+            ]
+    
+        }
+    }
+
 }
+
 
 </script>
 
@@ -16,16 +29,9 @@ export default {
 
             <ul>
 
-                <li>link</li>
-                <li>link</li>
-                <li>link</li>
-                <li>link</li>
-                <li>link</li>
-                <li>link</li>
-                <li>link</li>
-                <li>link</li>
-                <li>link</li>
-                <li>link</li>
+                <li v-for="currentLink in navLinks">
+                    {{ currentLink }}
+                </li>
 
             </ul>
 
@@ -35,33 +41,37 @@ export default {
 
 </template>
 
-<style>
+<style lang="scss">
 
 nav{
+
     background-color: white;
+
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        ul{
+            display: flex;
+            gap: 30px;
+
+            list-style-type: none;
+
+            li{
+                font-size: bold;
+
+                text-transform: uppercase;
+            }
+        }
+    }
+    
 }
 
 .container{
-    /* padding: 20px 0; */
+    padding: 20px 0;
     margin: 0 auto;
 
     max-width: 1250px;
-}
-
-nav .container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-nav .container img{
-    margin-top: 50px;
-}
-
-nav .container ul{
-    display: flex;
-    gap: 30px;
-
-    list-style-type: none;
 }
 </style>

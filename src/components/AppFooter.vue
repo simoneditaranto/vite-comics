@@ -1,7 +1,64 @@
 <script>
 
 export default{
-    name: 'AppFooter'
+    name: 'AppFooter',
+
+    data() {
+
+        return {
+            footerLinks: [
+                {
+                    title: 'dc comics',
+                    links: [
+                        'Characters',
+                        'Comics',
+                        'Movies',
+                        'TV',
+                        'Games',
+                        'Videos',
+                        'News'
+                    ],
+                },
+
+                {
+                    title: 'shop',
+                    links: [
+                        'Shop DC',
+                        'Shop DC Collectibles',
+                    ]
+                },
+
+                {
+                    title: 'dc',
+                    links: [
+                        'Terms Of Use',
+                        'Privacy policy (new)',
+                        'Terms Of Use',
+                        'Privacy policy',
+                        'Terms Of Use',
+                        'Privacy policy',
+                        'Terms Of Use',
+                        'Privacy policy',
+                        'Terms Of Use',
+                        'Privacy policy',
+                        'Terms Of Use',
+                    ],
+                },
+
+                {
+                    title: 'sites',
+                    links: [
+                        'DC',
+                        'MAD Magazine',
+                        'DC',
+                        'MAD Magazine',
+                        'DC',
+                    ],
+                },
+            ]
+        }
+
+    }
 }
 
 </script>
@@ -14,33 +71,15 @@ export default{
             
             <div class="links">
 
-                <div class="link-list">
-                    <h3>DC COMICS</h3>
+                <div 
+                    class="link-list" 
+                    v-for="currentElement in footerLinks"
+                >
+                    <h3>{{ currentElement.title }}</h3>
                     <ul>
-
-                        <li>link</li>
-                        <li>link</li>
-                        <li>link</li>
-                        <li>link</li>
-                        <li>link</li>
-                        <li>link</li>
-                        <li>link</li>
-
-                    </ul>
-                </div>
-
-                <div class="link-list">
-                    <h3>DC COMICS</h3>
-                    <ul>
-
-                        <li>link</li>
-                        <li>link</li>
-                        <li>link</li>
-                        <li>link</li>
-                        <li>link</li>
-                        <li>link</li>
-                        <li>link</li>
-
+                        <li v-for="currentLink in currentElement.links">
+                            {{ currentLink }}
+                        </li>
                     </ul>
                 </div>
 
@@ -57,37 +96,45 @@ export default{
 
 </template>
 
-<style>
+<style lang="scss">
 
 footer{
+
     background-image: url('/img/footer-bg.jpg');
     background-size: cover;
-}
 
-footer .container{
+    .container{
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
 
         color: white;
+
+        .links{
+            display: flex;
+            gap: 55px;
+
+            padding: 45px 0 0;
+        }
+
+        h3{
+            margin-bottom: 20px;
+
+            text-transform: uppercase;
+        }
+
+        ul{
+            list-style-type: none;
+
+            li{
+                color: #959595;
+
+                cursor: pointer;
+            }
+        }
+    }
+
 }
-
-footer .container .links {
-    display: flex;
-    gap: 55px;
-
-    padding: 45px 0 0;
-}
-
-
-footer .container h3{
-    margin-bottom: 20px;
-}
-
-footer .container ul{
-    list-style-type: none;
-}
-
 /* img{
     transform: translateY(-25%);
 } */

@@ -18,24 +18,24 @@ export default {
 
 </template>
 
-<style>
+<style lang="scss">
 
 main{
     padding: 55px 0;
     /* test */
 
     background-color: black;
-}
 
-main .content{
-    margin: 0 auto;
+    .content{
+        margin: 0 auto;
     
-    width: 1250px;
+        width: 1250px;
 
-    font-size: 1.5em;
-    font-weight: bold;
+        font-size: 1.5em;
+        font-weight: bold;
 
-    color: white;
+        color: white;
+    }
+
 }
-
 </style>

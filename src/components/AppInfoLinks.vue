@@ -29,31 +29,43 @@ export default{
 
 </template>
 
-<style>
+<style lang="scss">
 
 #info-links{
     background-color: #303030;
-}
 
-#info-links .container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
 
-    padding: 30px 0;
-}
+        padding: 30px 0;
 
-#info-links .container .socials{
-    display: flex;
-    align-items: center;
-    gap: 30px;
-}
+        button{
+            padding: 18px;
 
-#info-links .container .socials .follow-us{
-    font-weight: bold;
+            text-transform: uppercase;
+
+            border: 2px solid #0282F9;
+
+            background-color: #303030;
+            
+            cursor: pointer;
+        }
+
+        .socials{
+            display: flex;
+            align-items: center;
+            gap: 30px;
+
+            .follow-us{
+                font-weight: bold;
     
-    text-transform: uppercase;
+                text-transform: uppercase;
 
-    color: #0282F9;
+                color: #0282F9;
+            }
+        }
+    }
 }
 </style>

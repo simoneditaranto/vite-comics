@@ -86,9 +86,7 @@ export default{
             </div>
 
             
-                <img src="/img/dc-logo-bg.png" alt="">
-           
-            
+            <img src="/img/dc-logo-bg.png" alt="">
             
         </div>
         
@@ -108,13 +106,17 @@ footer{
         justify-content: space-between;
         align-items: flex-start;
 
+        position: relative;
+
+        padding: 45px 0 55px;
+
         color: white;
 
         .links{
             display: flex;
             gap: 55px;
 
-            padding: 45px 0 0;
+            // padding: 45px 0 0;
         }
 
         h3{
@@ -131,6 +133,12 @@ footer{
 
                 cursor: pointer;
             }
+        }
+
+        img{
+            position: absolute;
+            right: 0;
+            bottom: -20%;
         }
     }
 

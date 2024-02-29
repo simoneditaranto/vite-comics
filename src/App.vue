@@ -1,7 +1,6 @@
 <script>
 import AppNav from './components/AppNav.vue';
 import AppMain from './components/AppMain.vue';
-import AppIcons from './components/AppIcons.vue';
 import AppFooter from './components/AppFooter.vue';
 import AppInfoLinks from './components/AppInfoLinks.vue';
 
@@ -9,7 +8,6 @@ export default {
   components: {
     AppNav,
     AppMain,
-    AppIcons,
     AppFooter,
     AppInfoLinks,
   }
@@ -22,8 +20,6 @@ export default {
   <AppNav></AppNav>
 
   <AppMain></AppMain>
-
-  <AppIcons></AppIcons>
 
   <AppFooter></AppFooter>
 

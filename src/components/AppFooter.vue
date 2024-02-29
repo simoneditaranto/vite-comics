@@ -1,7 +1,12 @@
 <script>
+import AppIcons from './AppIcons.vue';
 
 export default{
     name: 'AppFooter',
+
+    components: {
+        AppIcons,
+    },
 
     data() {
 
@@ -66,6 +71,7 @@ export default{
 <template>
 
     <footer>
+        <AppIcons></AppIcons>
 
         <div class="container">
             

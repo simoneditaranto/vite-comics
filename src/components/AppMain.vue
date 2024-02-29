@@ -10,6 +10,10 @@ export default {
 
     <main>
 
+        <div class="content">
+            --> Content goes here <--
+        </div>
+
     </main>
 
 </template>
@@ -17,10 +21,21 @@ export default {
 <style>
 
 main{
-    height: 130px;
+    padding: 55px 0;
     /* test */
 
     background-color: black;
+}
+
+main .content{
+    margin: 0 auto;
+    
+    width: 1250px;
+
+    font-size: 1.5em;
+    font-weight: bold;
+
+    color: white;
 }
 
 </style>

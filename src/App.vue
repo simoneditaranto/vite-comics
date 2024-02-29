@@ -3,7 +3,7 @@ import AppNav from './components/AppNav.vue';
 import AppMain from './components/AppMain.vue';
 import AppIcons from './components/AppIcons.vue';
 import AppFooter from './components/AppFooter.vue';
-import AppInfo from './components/AppInfo.vue';
+import AppInfoLinks from './components/AppInfoLinks.vue';
 
 export default {
   components: {
@@ -11,7 +11,7 @@ export default {
     AppMain,
     AppIcons,
     AppFooter,
-    AppInfo,
+    AppInfoLinks,
   }
 }
 
@@ -27,7 +27,7 @@ export default {
 
   <AppFooter></AppFooter>
 
-  <AppInfo></AppInfo>
+  <AppInfoLinks></AppInfoLinks>
 
 
 </template>

@@ -42,17 +42,20 @@ nav{
 }
 
 .container{
-    max-width: 1250px;
-
+    /* padding: 20px 0; */
     margin: 0 auto;
+
+    max-width: 1250px;
 }
 
 nav .container{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
 
-    padding: 20px 0;
+nav .container img{
+    margin-top: 50px;
 }
 
 nav .container ul{

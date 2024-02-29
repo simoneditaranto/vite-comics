@@ -65,17 +65,18 @@ footer{
 }
 
 footer .container{
-    display: flex;
-    justify-content: space-between;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
 
-    color: white;
+        color: white;
 }
 
 footer .container .links {
     display: flex;
     gap: 55px;
 
-    padding: 45px 0 60px;
+    padding: 45px 0 0;
 }
 
 
@@ -87,8 +88,8 @@ footer .container ul{
     list-style-type: none;
 }
 
-img{
+/* img{
     transform: translateY(-25%);
-}
+} */
 
 </style>

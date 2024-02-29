@@ -10,6 +10,21 @@ export default{
 
     <div id="info-links">
 
+        <div class="container">
+
+            <button>Sing up now!</button>
+
+            <div class="socials">
+                <div class="follow-us">follow us</div>
+                <img src="/img/footer-facebook.png" alt="">
+                <img src="/img/footer-twitter.png" alt="">
+                <img src="/img/footer-youtube.png" alt="">
+                <img src="/img/footer-pinterest.png" alt="">
+                <img src="/img/footer-periscope.png" alt="">
+            </div>
+
+        </div>
+
     </div>
 
 </template>
@@ -17,10 +32,28 @@ export default{
 <style>
 
 #info-links{
-    height: 110px;
-    /* test */
-
     background-color: #303030;
 }
 
+#info-links .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 30px 0;
+}
+
+#info-links .container .socials{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+#info-links .container .socials .follow-us{
+    font-weight: bold;
+    
+    text-transform: uppercase;
+
+    color: #0282F9;
+}
 </style>

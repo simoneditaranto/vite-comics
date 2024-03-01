@@ -19,13 +19,14 @@ export default {
 .jumbo-img{
     width: 100%;
     height: 400px;
+    
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: top;
+    }
 }
 
-img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: top;
-}
 
 </style>

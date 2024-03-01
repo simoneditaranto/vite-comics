@@ -101,6 +101,7 @@ export default{
 </template>
 
 <style lang="scss">
+@use '../styles/mixins' as *;
 
 footer{
 
@@ -108,9 +109,7 @@ footer{
     background-size: cover;
 
     .container{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        @include centered-between;
 
         height: 400px;
 

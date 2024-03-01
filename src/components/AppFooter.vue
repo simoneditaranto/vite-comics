@@ -108,22 +108,31 @@ footer{
     background-size: cover;
 
     .container{
-        // display: flex;
-        // justify-content: space-between;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
 
-        position: relative;
+        height: 400px;
 
-        padding: 45px 0 55px;
+        overflow: hidden;
+
+        padding: 0;
 
         color: white;
 
         .links{
             display: flex;
-            gap: 55px;
+            flex-direction: column;
+            flex-wrap: wrap;
+            gap: 10px 40px;
+
+            padding: 40px 0;
+
+            height: 100%;
         }
 
         h3{
-            margin-bottom: 20px;
+            margin-bottom: 10px;
 
             text-transform: uppercase;
         }
@@ -138,11 +147,6 @@ footer{
             }
         }
 
-        img{
-            position: absolute;
-            right: 0;
-            bottom: -20%;
-        }
     }
 
 }

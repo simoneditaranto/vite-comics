@@ -37,9 +37,6 @@ export default{
 #info-links{
     background-color: #303030;
 
-    position: absolute;
-    width: 100%;
-
     .container{
         @include centered-between;
 

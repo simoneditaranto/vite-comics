@@ -143,6 +143,12 @@ footer{
                 color: #959595;
 
                 cursor: pointer;
+
+                &:hover{
+                    color: white;
+
+                    text-decoration: underline;
+                }
             }
         }
 

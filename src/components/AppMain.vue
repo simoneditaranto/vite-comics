@@ -167,6 +167,8 @@ main{
             border: none;
 
             background-color: $myBlueColor;
+
+            cursor: pointer;
         }
     }
 

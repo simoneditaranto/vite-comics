@@ -82,6 +82,8 @@ nav{
 
                 text-transform: uppercase;
 
+                cursor: pointer;
+
                 &.active{
                     color: $myBlueColor;
                 }

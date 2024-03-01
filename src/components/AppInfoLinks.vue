@@ -1,7 +1,36 @@
 <script>
 
 export default{
-    name: 'AppInfoLinks'
+    name: 'AppInfoLinks',
+
+    data() {
+        return {
+
+            socials: [
+                {
+                    socialName: 'facebook',
+                    socialIcon: '/img/footer-facebook.png',
+                },
+                {
+                    socialName: 'twitter',
+                    socialIcon: '/img/footer-twitter.png',
+                },
+                {
+                    socialName: 'youtube',
+                    socialIcon: '/img/footer-youtube.png',
+                },
+                {
+                    socialName: 'pinterest',
+                    socialIcon: '/img/footer-pinterest.png',
+                },
+                {
+                    socialName: 'periscope',
+                    socialIcon: '/img/footer-periscope.png',
+                },
+            ]
+
+        }
+    }
 }
 
 </script>
@@ -16,11 +45,11 @@ export default{
 
             <div class="socials">
                 <div class="follow-us">follow us</div>
-                <img src="/img/footer-facebook.png" alt="">
-                <img src="/img/footer-twitter.png" alt="">
-                <img src="/img/footer-youtube.png" alt="">
-                <img src="/img/footer-pinterest.png" alt="">
-                <img src="/img/footer-periscope.png" alt="">
+                <img
+                    v-for="currentSocial in socials" 
+                    :src="currentSocial.socialIcon" :alt="currentSocial.socialName"
+                >
+                
             </div>
 
         </div>
@@ -65,6 +94,16 @@ export default{
                 text-transform: uppercase;
 
                 color: $myBlueColor;
+            }
+
+            img{
+
+               cursor: pointer;
+
+               &:hover{
+                   filter: invert(100%);
+               }
+
             }
         }
     }

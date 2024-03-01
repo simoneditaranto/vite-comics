@@ -31,6 +31,9 @@ export default{
 
 <style lang="scss">
 
+@use '../styles/variables' as *;
+@use '../styles/mixins' as *;
+
 #info-links{
     background-color: #303030;
 
@@ -38,9 +41,7 @@ export default{
     width: 100%;
 
     .container{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        @include centered-between;
 
         padding: 30px 0;
 
@@ -49,7 +50,7 @@ export default{
 
             text-transform: uppercase;
 
-            border: 2px solid #0282F9;
+            border: 2px solid $myBlueColor;
 
             background-color: #303030;
             
@@ -66,7 +67,7 @@ export default{
     
                 text-transform: uppercase;
 
-                color: #0282F9;
+                color: $myBlueColor;
             }
         }
     }

@@ -57,15 +57,17 @@ export default{
 
 <style lang="scss">
 
+@use '../styles/variables' as *;
+@use '../styles/mixins' as *;
+
 #icons{
 
     padding: 50px 0;
 
-    background-color: #0282F9;
+    background-color: $myBlueColor;
 
     .cards {
-        display: flex;
-        justify-content: center;
+        @include centered;
         gap: 70px;
 
         .card{

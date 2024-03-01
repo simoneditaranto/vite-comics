@@ -108,9 +108,8 @@ footer{
     background-size: cover;
 
     .container{
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
+        // display: flex;
+        // justify-content: space-between;
 
         position: relative;
 
@@ -121,8 +120,6 @@ footer{
         .links{
             display: flex;
             gap: 55px;
-
-            // padding: 45px 0 0;
         }
 
         h3{
@@ -149,8 +146,5 @@ footer{
     }
 
 }
-/* img{
-    transform: translateY(-25%);
-} */
 
 </style>

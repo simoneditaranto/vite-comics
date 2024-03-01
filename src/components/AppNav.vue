@@ -43,14 +43,14 @@ export default {
 
 <style lang="scss">
 
+@use '../styles/mixins' as *;
+
 nav{
 
     background-color: white;
 
     .container{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        @include centered-between;
 
         ul{
             display: flex;

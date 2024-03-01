@@ -3,6 +3,7 @@ import AppNav from './components/AppNav.vue';
 import AppMain from './components/AppMain.vue';
 import AppFooter from './components/AppFooter.vue';
 import AppInfoLinks from './components/AppInfoLinks.vue';
+import AppJumbo from './components/AppJumbo.vue';
 
 export default {
   components: {
@@ -10,6 +11,7 @@ export default {
     AppMain,
     AppFooter,
     AppInfoLinks,
+    AppJumbo,
   }
 }
 
@@ -18,6 +20,8 @@ export default {
 <template>
   
   <AppNav></AppNav>
+
+  <AppJumbo></AppJumbo>
 
   <AppMain></AppMain>
 

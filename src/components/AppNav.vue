@@ -52,6 +52,11 @@ nav{
     .container{
         @include centered-between;
 
+        img{
+            width: 80px;
+            height: 80px;
+        }
+
         ul{
             display: flex;
             gap: 30px;

@@ -97,6 +97,10 @@ export default {
     <main>
 
         <div class="container">
+
+            <div class="current-series">
+                Current series
+            </div>
             
             <div class="comics-cards">
 
@@ -108,6 +112,10 @@ export default {
                 </ComicItem>
 
             </div>
+
+            <button class="btn"> 
+                Load more
+            </button>
             
         </div>
 
@@ -116,19 +124,52 @@ export default {
 </template>
 
 <style lang="scss">
+@use '../styles/variables' as *;
 
 main{
-    
+
     background-color: #1C1C1C;
 
-    .comics-cards{
+    .container{
         display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        gap: 50px 25px;
+        flex-direction: column;
+        align-items: center;
 
-        padding: 50px 0;
+        position: relative;
+
+        .current-series{
+            position: absolute;
+            top: -25px;
+            left: -10px;
+
+            font-size: 2em;
+            font-weight: bold;
+            
+            text-transform: uppercase;
+            
+            color: white;
+
+            background-color: $myBlueColor;
+        }
+
+        .comics-cards{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 50px 25px;
+    
+            padding: 50px 0;
+        }
+
+        .btn{
+            padding: 12px 55px;
+
+            border: none;
+
+            background-color: $myBlueColor;
+        }
     }
+
 
 }
 </style>
